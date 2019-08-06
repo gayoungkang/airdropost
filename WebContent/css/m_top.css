@@ -1,0 +1,345 @@
+header {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: 999;
+}
+header .contentdiv {
+	width: 85.83%;
+	margin: 0 auto;
+	padding: 30px 0;
+	position: relative;
+}
+header .contentdiv .logo {
+	width: 28%;
+	float: left;
+	line-height: 2;
+}
+header .contentdiv .logo .logo-a {
+	width: 100%;
+	display: inline-block;
+	line-height: 1;
+}
+header .contentdiv .logo .logo-a .logo-img {
+	width: 100%;
+}
+/* home 활성화 css */
+header .contentdiv .logo .home {
+	width: 28%;
+	float: left;
+	line-height: 2;
+}
+header .contentdiv .logo .home .home-a {
+	width: 100%;
+	display: inline-block;
+}
+header .contentdiv .logo .home .home-a .home {
+	width: 28%;
+}
+/* ------------------------------------ */
+header .contentdiv .page-title h2 {
+	text-align: center;
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 1rem;
+}
+header .menu-btn {
+	width: 7%;
+	float: right;
+	height: 15px;
+	margin-top: 3px;
+	z-index: 99999;
+	position: relative;
+}
+header .menu-btn span {
+	display: block;
+	width: 50%;
+	height: 1.5px;
+	position: absolute;
+	opacity: 1;
+	background-color: #fff;
+	 -webkit-transform: rotate(0deg);
+  	-moz-transform: rotate(0deg);
+  	-o-transform: rotate(0deg);
+  	transform: rotate(0deg);
+  	-webkit-transition: .25s ease-in-out;
+  	-moz-transition: .25s ease-in-out;
+  	-o-transition: .25s ease-in-out;
+  	transition: .25s ease-in-out;
+}
+header .menu-btn span:nth-child(5) {
+	width: 37%;
+}
+header .menu-btn span:nth-child(6) {
+	width: 36%;
+}
+header .menu-btn span:nth-child(6) {
+	left: 37%; 
+}
+header .menu-btn span:nth-child(7) {
+	width: 3px;
+	height: 3px;
+	top: 76.7%;
+	margin-left: 90%;
+	border-radius: 50%;
+}
+header .menu-btn span:nth-child(-n+5) {
+	left: 50%;
+}
+header .menu-btn span:nth-child(6){
+	left: 37%;
+}
+header .menu-btn span:nth-child(odd) {
+	left: 0;
+}
+header .menu-btn span:nth-child(1), header .menu-btn span:nth-child(2){
+	top: 0px;
+}
+header .menu-btn span:nth-child(3), header .menu-btn span:nth-child(4){
+	top: 6px;
+}
+header .menu-btn span:nth-child(5), header .menu-btn span:nth-child(6){
+	top: 12px;
+}
+/* menu icon 스크립트 */
+header .menu-btn.active span:nth-child(5), header .menu-btn.active span:nth-child(6) {
+	top: 20px;
+}
+header .menu-btn.active span:nth-child(1), header .menu-btn.active span:nth-child(6) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+header .menu-btn.active span:nth-child(7) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+header .menu-btn.active span:nth-child(2), header .menu-btn.active span:nth-child(5) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+header .menu-btn.active span:nth-child(1) {
+	left: -1px;
+	top: 7px;
+	background-color: #fd4d0a;	
+}
+header .menu-btn.active span:nth-child(2) {
+	left: calc(50% - 5.2px);
+	top: 7px;
+	background-color: #fd4d0a;		
+}
+header .menu-btn.active span:nth-child(3) {
+	left: -50%;
+	opacity: 0;	
+}
+header .menu-btn.active span:nth-child(4) {
+	left: 100%;
+	opacity: 0;	
+}
+header .menu-btn.active span:nth-child(7) {
+	left: 100%;
+	opacity: 0;	
+}
+header .menu-btn.active span:nth-child(5) {
+	width: 50%;
+	left: -2px;
+    top: 14px;
+	background-color: #fd4d0a;		
+}
+header .menu-btn.active span:nth-child(6) {
+	width: 50%;
+	left: calc(50% - 4.2px);
+	top: 14px;
+	background-color: #fd4d0a;		
+}
+/* menu 영역 */
+/* menu list 스크립트 */
+header .menu {
+	width: 80%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: -82%;
+	z-index: 99;
+	transition: all 0.5s;
+	background-color: #1d1e2e;
+}
+header .menu.active {
+	width: 80%;
+	right: -24px; 
+}
+.menu_overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform: translateX(100%);
+	background-color: #000;
+	opacity: 0; 
+  	overflow: auto;
+  	position: fixed;
+  	transition: opacity 0.3s;
+}
+.menu_overlay.active {
+	opacity: 0.7;
+	overflow: visible;
+	transform: translateX(0%);
+}
+/* --------------------------------------- */
+header .menu .menu-list {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header .menu .menu-list li {
+	width: 100%;
+	padding: 0 3rem 0 3rem;
+	line-height: 5;
+	opacity: 0.9;
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 12px;
+}
+header .menu .menu-list li a {
+	display: inline-block;
+	float: left;
+}
+header .menu .menu-list li .content {
+	float: left;
+	position: relative;
+}
+header .menu .menu-list li .new, header .menu .menu-list li .soon {
+	float: right;
+	font-family: 'NotoSansCJKkr-Light';
+	font-size: 12px;
+}
+header .menu .menu-list li .soon {
+	color: #8a8a8a;
+}
+header .menu .menu-list li .new {
+	color: #fd4d0a; 
+}
+/* 로그인 전 메뉴 : 여기서부터 점선까지 주석으로 사용하세요 */
+/* header .menu .menu-list .log-in {
+	line-height: 1;
+	padding: 1.9rem 0 0.9rem 1.5rem;
+}
+header .menu .menu-list .login-icon {
+	width: 31px;
+    height: 31px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 2px;
+	padding-top: 2px;
+	margin-right: 8px;
+	text-align: center;
+}
+header .menu .menu-list .log-in img {
+	width: 27px;
+}
+header .menu .menu-list .log-in .login-text {
+	width: 70%;
+	float: left;
+	line-height: 1.5;
+}
+header .menu .menu-list .log-in h2 {
+	width: 60%;
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 12px;
+}
+header  .menu .menu-list .log-in p {
+	font-family: 'NotoSansCJKkr-Light';
+	font-size: 9px;
+	font-weight: 100;
+} 
+header .menu .menu-list li .content {
+	float: left;
+	position: relative;
+}
+*/
+/* ------------------------------------------------- */
+/* 로그인 후 메뉴 : 여기서부터 점선까지 주석으로 사용하세요 */
+header .menu .menu-list .log-in-kakao {
+	line-height: 1;
+	padding: 1.9rem 0 0.9rem 1.5rem;
+}
+header .menu .menu-list .log-in-kakao-icon {
+	width: 31px;
+    height: 31px;
+	float: left;
+	border-radius: 50%;
+	margin-top: 2px;
+	padding-top: 2px;
+	margin-right: 8px;
+	text-align: center;
+	background-size: 31px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #575757;
+	background-image: url("../images/login-kakao.png");
+}
+header .menu .menu-list .log-in-kakao .log-in-kakao-text {
+	width: 44%;
+	float: left;
+	line-height: 1.2;
+	transform: translateY(50%);
+}
+header .menu .menu-list .log-in-kakao .log-in-kakao-text h2 {
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 15px;
+}
+header .menu .menu-list li .content::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: -18px;
+	width: 10px;
+  	opacity: 0.9;
+	border: 0.5px solid #fff;
+}  
+/* -------------------------------------------------------- */
+header .menu .lang {
+	width: 80%;
+	/* margin: 0 auto;
+	margin-top: 9%; */ 
+	height:42px;
+	position: absolute; 
+	line-height: 42px;
+	bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .menu .lang .label_pick a {
+	display: inline-block;	
+	width:42px; 
+	height:42px; 
+	background: url('../images/japan.png') center no-repeat;
+	background-size:36px; 
+	border-radius:50vh;
+	opacity:0.5; 
+	margin-right: 3%;
+}
+header .menu .lang .label_pick a.active{
+	border:3px solid #fd4d0a; 
+	opacity:1; 
+}
+header .menu .lang .label_pick a.kor {
+	background-image: url('../images/korea.png'); 
+}
+header .menu .lang .label_pick a.eng {
+	background-image: url('../images/usa.png'); 
+}
+header .menu .lang .label_pick a.cn {
+	background-image: url('../images/china.png'); 
+}
+header .menu .lang .label_pick a.japan {
+	background-image: url('../images/japan.png'); 
+}

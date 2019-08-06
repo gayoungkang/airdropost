@@ -1,0 +1,80 @@
+body {
+	background-color: #1d1e2e; 
+}
+.faq {
+	width: 100%;
+	height: 100%;
+	padding-top: 80px;
+	position: relative;
+	background-color: #1d1e2e; 
+}
+.faq .brand-title {
+	width: 100%;
+	height: 80px;
+	top: 0;
+	text-align: center;
+	position: absolute;
+}
+.faq .brand-title h2 {
+	top: 50%;
+    left: 50%;
+    position: absolute;
+    font-family: 'NotoSansCJKkr-Regular', sans-serif;
+	color: #fff;
+	font-size: 17px;
+    transform: translate(-50%,-50%);
+}
+.faq .list {
+	width: 100%;
+	border-top: 1px solid #444444;
+}
+.faq .list:last-child {
+	border-bottom: 1px solid #444444;
+}
+.faq .tab {
+	width: 100%;
+	padding: 1.5rem 1.5rem;
+}
+.faq .tab .title {
+	width: 90%;
+	float: left;
+}
+.faq .tab .title h2 {
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 15px;
+}
+.faq .tab .btn img {
+	width: 15px;
+	vertical-align: bottom;
+}
+.faq .content p {
+	font-family: 'NotoSansCJKkr-Light';
+	font-size: 13px;
+	color: #d8d8d8;
+	line-height: 2;
+}
+/* faq class 스크립트 */
+.faq .tab .btn.active {
+	-ms-transform: rotate(90deg); 
+	-webkit-transform: rotate(90deg); 
+	transform: rotate(90deg);
+	text-align: center;
+	opacity: 0.5;
+}
+.faq .tab .btn {
+	width: 10%;
+	float: right;
+	text-align: right;
+	border: 0;
+	transition: all 0.3s ease-in-out 0s;
+	background-color: transparent;
+}
+.faq .content {
+	width: 100%;
+	display: none;
+	padding: 1.5rem 1.5rem;
+	background-color: #0f0f19;
+}
+.faq .content.active {
+	display: block;
+}

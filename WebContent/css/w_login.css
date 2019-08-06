@@ -1,0 +1,42 @@
+.log-in {
+	width: 100%;
+	position: relative;
+}
+.log-in .content {
+	padding: 886px 85px 0 328px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.log-in .content a {
+	display: inline-block;
+}
+.log-in .login-wrap .logo {
+	width: 106px;
+}
+.log-in .login-wrap .login-box {
+	width: 300px;
+ 	height: 452px;
+ 	padding-top: 32px;
+	border-radius: 10px;
+	background-color: #1d1e2e;
+	box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.log-in .login-wrap h2 {
+	font-family: 'NotoSansCJKkr-Bold';
+	font-size: 40px;
+	color: #aaaaaa;
+	opacity: 0.47;
+	text-align: center;
+}
+.log-in .login-wrap .login-box ul {
+	margin-top: 45px;
+}
+.log-in .login-wrap .login-box li {
+	margin-bottom: 16px;
+}
+.log-in .login-wrap .login-box li a img {
+	width: 213px;
+}

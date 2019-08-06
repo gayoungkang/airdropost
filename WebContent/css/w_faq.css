@@ -1,0 +1,110 @@
+.faq {
+	width: 100%;
+	max-width: 1000px;
+	padding: 7% 47px 0 304px;
+	margin: 0 auto;
+}
+.faq .content {
+	width: 100%;
+}
+.faq .content .page-title {
+	width: 100%;
+}
+.faq .content .page-title h2 {
+    font-family: 'NotoSansCJKkr-Bold', sans-serif;
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 54px;	
+}
+.faq .content .list {
+	width: 100%;
+	margin: 0 auto;
+	border-bottom: 1px solid #444444;
+}
+.faq .content .list:first-child {
+	border-top: 1px solid #444444;
+}
+.faq .content .list .tab {
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 3.5;
+}
+.faq .content .list .tab .title {
+	float: left;
+}
+.faq .content .list .tab .title h2 {
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 16px;
+}
+.faq .content .list .tab .btn {
+	float: right;
+	width: 20px;
+	border: 0;
+	transition: all 0.3s ease-in-out 0s;
+	background-color: transparent;
+}
+.faq .content .list .tab .btn img {
+	vertical-align: middle;
+	vertical-align: -webkit-baseline-middle
+}
+.faq .content .list .text p {
+	font-family: 'NotoSansCJKkr-Light';
+	font-size: 15px;
+	color: #d8d8d8;
+	line-height: 2;
+	padding: 10px 20px;
+}
+.faq .content .list .text {
+	display: none;
+}
+/* faq 클래스 스크립트 */
+.faq .content .list .text.active {
+	display: block;
+	border-top: 1px solid #444444;
+}
+.faq .content .list .tab .btn.active {
+	-ms-transform: rotate(90deg); 
+	-webkit-transform: rotate(90deg); 
+	transform: rotate(90deg);
+	text-align: center;
+	opacity: 0.5;
+}
+/* -------------------------------------------- */
+.faq .content .pagination-box {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.faq .content .pagination {
+	margin: 0 auto;
+}
+.faq .content .pagination .pagination-bullet td {
+	text-align: center;
+	color: #7b7b83;
+	position: relative;
+}
+.faq .content .pagination .pagination-bullet td p {
+	font-family: 'NotoSansCJKkr-Regular';
+	margin-right: 5px;
+	display: inline-block;
+}
+.faq .content .pagination  .pagination-bullet .on-click {
+	width: 20px;
+    height: 20px;
+    border-radius: 50%;
+	color: #fff;
+	line-height: 20px;
+	background: #fd4d0a;
+}
+.faq .content .pagination-box button {
+	position: absolute;
+	bottom: 2px;
+	background-color: transparent;
+}
+.faq .content .pagination-box .prev {
+	left: -88%;
+}
+.faq .content .pagination-box .next {
+	right: -64%;
+	transform: rotate(180deg); 
+}

@@ -1,0 +1,138 @@
+/*  main-page 영역 */
+.main-page {
+	width: 100%;
+}
+.main-page .content {
+	padding: 27px 47px 0 362px;
+}
+.main-page .main-title {
+	margin-bottom: 50px;
+}
+.main-page .main-title h1 {
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 22px;
+}
+.main-page .content li {
+	width: 238px;
+	float: left;
+	margin-right: 60px;
+	margin-bottom: 70px;
+	position: relative;
+}
+.main-page .content .list li .poster {
+	width: 100%;
+	height: 350px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/w_main1.png");
+}
+.main-page .content .list li .btn {
+	width: 123px;
+    height: 43px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	font-size: 15px;
+	position: absolute;
+	bottom: 24%;
+    left: 50%;
+    line-height:43px;
+    text-align: center;
+    transform: translate(-50%,-24%);
+	display: inline-block;
+	font-family: 'NotoSansCJKkr-Regular';
+	background-color: transparent;
+}
+.main-page .content .list li .btn:hover {
+	color: #fd4d0a;
+	border: 1px solid #fd4d0a;
+}
+.main-page .content .list li .text-box {
+	width: 100%;
+	margin-top: 20px;
+}
+.main-page .content .list li .text-box .title {
+	width: 100%;
+	margin-bottom: 17px;
+}
+.main-page .content .list li .text-box .title h2 {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 18px;
+	height: 22px;
+}
+.main-page .content .list li .time {
+	width: 100%;
+}
+.main-page .content .list li .time .time-box {
+	width: 55%;
+	float: left;
+}
+.main-page .content .list li .time .total-box {
+	width: 45%;
+	float: right;
+	text-align: right;
+}
+.main-page .content .list li .time .total-box .total {
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 12px;
+	color: #707070;
+}
+/* 조건부 클래스명 */
+.main-page .content .list li .time .total-box .total.active {
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 12px;
+	color: #fd4d0a;
+}
+/* ------------------------------------- */
+.main-page .content .list li .time .time-box .icon {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/time_gray.png");
+	margin-right: 5px;
+}
+.main-page .content .list li .time .time-box .time {
+	font-family: 'NotoSansCJKkr-Regular';
+	font-size: 12px;
+	vertical-align: text-top;
+	color: #707070;
+}
+/* 조건부 클래스명 */
+.main-page .content .list li .time .time-box .icon.active {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../images/time_oran.png");
+	margin-right: 5px;
+}
+.main-page .content .list li .time .time-box .time.active {
+	color: #fd4d0a;
+}
+/* ------------------------------------- */
+.main-page .content .list li .line {
+	width: 100%;
+	position: relative;
+	margin-top: 7px;
+}
+.main-page .content .list li .line .line-gray {
+	width: 100%;
+	position: absolute;
+	height: 4px;
+	background-color: #444444;	
+}
+.main-page .content .list li .line .line-orange {
+	position: absolute;
+	width: 50%;
+	height: 4px;
+	background-color: #fd4d0a;	
+}

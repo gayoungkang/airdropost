@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1.0, width=device-width">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/m_main.css" />
+<link rel="stylesheet" href="./css/swiper.min.css" />
+<link rel="stylesheet" href="./css/m_step.css" />
+<link rel="stylesheet" href="./css/m_top.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+
+<body style="background: #1d1e2e;">
+	<header>
+		<div class="contentdiv clearfix">
+			<div class="logo">
+				 <a class="home-a" href="./m_main.html">
+					<img class="home" src="./images/home_btn.png" alt="로고" />
+				</a> 
+			</div>
+			<div class="menu-btn">
+				<span></span> <span></span> <span></span> <span></span> <span></span>
+				<span></span> <span></span>
+			</div>
+		</div>
+
+		<nav class="menu">
+			<ul class="menu-list">
+				 <li class="log-in-kakao clearfix">
+						<a href="./w_login.html"><i class="log-in-kakao-icon"></i></a>
+							<div class="log-in-kakao-text">
+								<h2>공병구</h2>
+							</div>
+					</li> 
+				<li class="menu-item clearfix"><a class="content" href="./m_main.html"><span>Ongoing</span></a>
+					<a class="new" href="#"><span>NEW 2</span></a></li>
+				<li class="menu-item clearfix"><a class="content" href="./m_main.html"><span>Upcoming</span></a>
+					<a class="soon" href="#"><span>SOON 5</span></a></li>
+				<li class="menu-item clearfix"><a class="content" href="./m_step.html"><span>Step</span></a>
+				</li>
+				<li class="menu-item clearfix"><a class="content" href="./m_faq.html"><span>FAQ</span></a>
+				</li>
+				<li class="menu-item clearfix"><a class="content" href="./m_mypage.html"><span>My Page</span></a>
+				</li>
+			</ul>
+			<div class="lang">
+				<span class="label_pick">
+					<a href="javascript: langChange(1);" id="lang_btn_1" class="kor active"></a>
+					<a href="javascript: langChange(2);" id="lang_btn_2" class="eng"></a>
+					<a href="javascript: langChange(3);" id="lang_btn_3" class="cn"></a>
+					<a href="javascript: langChange(4);" id="lang_btn_4" class="jp"></a>
+				</span>
+			</div>
+		</nav>
+		<div class="menu_overlay"></div>
+	</header>
+	<div class="ex_top"></div>
+	<!--  top menu-->
+	<div class="apply_wrap">
+		<div class="inner">
+			<p class="brand_title">BODBO</p>
+			<div class="writeform_wrap">
+				<div class="apply_navwrap">
+					<a href="javascript:void(0)" class="iconow"><span
+						class="point-border"><span class="point"></span></span></a>
+					<ul class="apply_nav clearfix">
+						<!-- js -->
+					</ul>
+				</div>
+				<div class="contents_wrap">
+					<ul class="contents clearfix">
+						<li>
+							<!--  STEP 번호  js로 줘야 함-->
+							<p class="title first">참여방법</p>
+							<ul class="list">
+								<!--  번호(num)  js로 줘야 함-->
+								<li><span class="num">01.</span><span class="txt"><span
+										class="bold">AirdropINFO</span> <span class="opa05">가입</span></span></li>
+								<li><span class="num">02.</span><span class="txt"><span
+										class="bold">카카오톡</span> <span class="opa05">오픈채팅방 입장</span></span></li>
+								<li><span class="num">03.</span><span class="txt"><span
+										class="bold">텔래그램</span> <span class="opa05">방 입장</span></span></li>
+								<li><span class="num">04.</span><span class="txt"><span
+										class="bold">페이스북</span> <span class="opa05">페이지 팔로우하기</span></span></li>
+								<li><span class="num">05.</span><span class="txt"><span
+										class="bold">트위터</span> <span class="opa05">팔로우하기</span></span></li>
+								<li><span class="num">06.</span><span class="txt"><span
+										class="bold">유튜브</span> <span class="opa05">채널 구독하기</span></span></li>
+								<li><span class="num">07.</span><span class="txt"><span
+										class="bold">플러스친구</span> <span class="opa05">페이지
+											친구추가하기</span></span></li>
+								<li><span class="num">08.</span><span class="txt"><span
+										class="opa05">친구에게 </span><span class="bold">공유하기</span></span></li>
+							</ul>
+						</li>
+						<li>
+							<p class="title">
+								<span class="tit_num">02</span><span class="tit_txt">STEP</span>
+							</p>
+							<p class="sns_title">KAKAO TALK</p>
+							<p class="sns_txt">
+								카카오톡 오픈 채팅방에 입장한 후<br /> <span class="bold">“닉네임 +
+									안녕하세요” </span>를 입력하시면 됩니다
+							</p>
+							<p class="get_txt_wrap">
+								<span class="get_txt">완료시 200 SRN 획득</span>
+							</p> <!--  line 생각 중 -->
+							<a href="#"><p class="icon_btn">오픈채팅방
+									입장</p></a>
+						</li>
+						<li>
+							<p class="title">
+								<span class="tit_num">02</span><span class="tit_txt">STEP</span>
+							</p>
+							<h2 class="sns_title">TELEGRAM</h2>
+							<p class="sns_txt">
+								텔레그램방에 입장한 후<br /> <span class="bold">“닉네임 + 안녕하세요” </span>를
+								입력하시면 됩니다
+							</p>
+							<p class="get_txt_wrap">
+								<span class="get_txt">완료시 200 SRN 획득</span>
+							</p>
+							 <a href="#"><p class="icon_btn">텔레그램
+									입장</p></a>
+						</li>
+						<li>
+							<p class="title">
+								<span class="tit_num">02</span><span class="tit_txt">STEP</span>
+							</p>
+							<h2 class="sns_title">FACEBOOK</h2>
+							<p class="sns_txt">
+								공식 페이스북 페이지에 방문 후<br /> <span class="bold">“좋아요 및 팔로우” </span>하기
+							</p>
+							<p class="get_txt_wrap">
+								<span class="get_txt">완료시 200 SRN 획득</span>
+							</p>
+							 <a href=#><p class="icon_btn">페이스북
+									바로가기</p></a>
+						</li>
+						<li>
+							<p class="title">
+								<span class="tit_num">02</span><span class="tit_txt">STEP</span>
+							</p>
+							<h2 class="sns_title">TWITTER</h2>
+							<p class="sns_txt">
+								공식 트위터에 들어가서<br /> <span class="bold">“팔로우” </span>를 눌러주세요.
+							</p>
+							<p class="get_txt_wrap">
+								<span class="get_txt">완료시 200 SRN 획득</span>
+							</p>
+							 <a href="#"><p class="icon_btn">트위터
+									바로가기</p></a>
+						</li>
+						<li>
+							<p class="title">
+								<span class="tit_num">02</span><span class="tit_txt">STEP</span>
+							</p>
+							<h2 class="sns_title">YOUTUBE</h2>
+							<p class="sns_txt">
+								공식 유튜브 채널에 들어가서<br /> <span class="bold">“구독하기” </span>를 눌러주세요.
+							</p>
+							<p class="get_txt_wrap">
+								<span class="get_txt">완료시 200 SRN 획득</span>
+							</p>
+							 <a href="#"><p class="icon_btn">유튜브
+									바로가기</p></a>
+						</li>
+						<li class="referrer">
+							<p class="title">
+								<span class="tit_num">02</span><span class="tit_txt">STEP</span>
+							</p>
+							<h2 class="sns_title">REFERRER</h2>
+							<p class="sns_txt">
+								친구 초대 하기 | 참여한 친구 수 : 30
+							</p>
+							<p class="get_referrer">
+								<span class="get_txt_referrer">*내 링크를 통해 친구가 이벤트 참여하면<br><span class="get_txt_bold">1명당 100SRN 추가획득</span> </span>
+							</p>
+							 <a href="#"><p class="icon_btn_referrer">내 고유 링크 생성 및 복사하기</p></a>
+						</li>
+						<li>
+							<p class="title">
+								<span class="tit_num">02</span><span class="tit_txt">STEP</span>
+							</p>
+							<h2 class="sns_title">SHARE</h2>
+							<p class="sns_txt">
+								아래 SNS중 한 곳에<span class="bold"> 공유하기 </span>
+							</p>
+							<p class="get_txt_wrap">
+								<span class="get_txt">완료시 200 SRN 획득</span>
+							</p>
+							 <a href="#"><p class="icon_btn_link">게시물 링크 복사하기</p></a>
+						</li>
+						<li>
+							<p class="title">
+								<span class="tit_num">05</span><span class="tit_txt">STEP</span>
+							</p>
+							<div class="title_form">
+								<h2>신청서 작성</h2>
+								<span><span class="bold">주의사항</span> ㅣ 허위 작성시 에어드랍이
+									취소됩니다.</span>
+							</div>
+							<form action="#">
+								<div class="step">
+									<span class="level">1단계</span> <span class="level_txt">
+										: 텔레그램 username 작성</span>
+									<button class="question" data-target=".list1">
+										<img src="./images/question.png" alt="물음표 아이콘" />
+									</button>
+									<label class="a11y" for="telegram-username"></label> <input
+										type="text" placeholder="@username" />
+								</div>
+								<div class="step">
+									<span class="level">2단계</span> <span class="level_txt">
+										: 페이스북 계정</span>
+									<button class="question" data-target=".list2">
+										<img src="./images/question.png" alt="물음표 아이콘" />
+									</button>
+									<label class="a11y" for="facebook-id"></label> <input
+										type="url" placeholder="페이스북 이메일 주소 입력" />
+								</div>
+								<div class="step">
+									<span class="level">3단계</span> <span class="level_txt">
+										: 에어드랍 지갑주소 작성</span>
+									<button class="question" data-target=".list3">
+										<img src="./images/question.png" alt="물음표 아이콘" />
+									</button>
+									<label class="a11y" for="airdrop"></label> <input type="text"
+										placeholder="내 지갑주소 입력" />
+								</div>
+								<div class="step">
+									<span class="level">4단계</span> <span class="level_txt">
+										: 공유하기</span>
+									<button class="question" data-target=".list4">
+										<img src="./images/question.png" alt="물음표 아이콘" />
+									</button>
+									<div class="select-box clearfix">
+											<span>인증방법 선택하기</span>
+											<select name="share" id="">
+												<option value="upload">공유한 곳 링크 업로드</option>
+												<option value="img">공유한 캡처사진 올리기</option>
+											</select>
+										</div>
+										<label class="a11y" for="recommender-code"></label> 
+										<input type="text" placeholder="링크입력하기" />
+										<div class="file-box">
+											<input id="img-btn" class="a11y" type="file" />
+											<div class="file clearfix">
+												<span>이미지 이름</span>
+												<label class="button" for="img-btn">이미지 첨부</label>
+												<!-- <button id="img-btn">이미지 첨부</button> -->
+											</div>
+										</div>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+				<div class="btn clearfix">
+					<a href="javascript:void(0)" class="prev" id="prev"></a> <a
+						href="javascript:void(0);" class="next"></a>
+				</div>
+			</div>
+			<!-- applyed 영역  -->
+			<div class="applyed" id="confirmPage">신청 완료 되었습니다.</div>
+		</div>
+		<!-- 모달 영역 -->
+		<div class="modal_pageout" id="pageOut">
+			<div class="content">
+				<h2>BUDBO AIRDROP</h2>
+				<p>
+					현재 페이지에서 이탈시 <br>작성한 내용은 저장되지 않습니다.<br> <span>페이지에서
+						나가시겠습니까?</span>
+				</p>
+				<div class="button-box">
+					<a class="confirm" href="#">확인</a> <a class="cancel"
+						href="javascript: cancelModal()">취소</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal_overlay"></div>
+	</div>
+	<!-- 	물음표 영역 -->
+	<section class="faq">
+		<div class="list list1">
+			<div class="tab clearfix">
+				<div class="title">
+					<h2>AirdropINFO 참여 방법</h2>
+				</div>
+				<button class="faq-btn">
+					<img src="./images/m_up.png" alt="tab 아이콘" />
+				</button>
+			</div>
+			<div class="content">
+				<p>
+					1. AirdropINFO 가입<br> 2. 카카오톡 오픈채팅방 참여<br> 3. 텔레그램방 참여<br>
+					4. 페이스북 페이지 좋아요<br> 5. 트위터 팔로우<br> 6. 프로젝트 내용 공유
+				</p>
+			</div>
+		</div>
+		<div class="list list2">
+			<div class="tab clearfix">
+				<div class="title">
+					<h2>AirdropINFO 참여 방법</h2>
+				</div>
+				<button class="faq-btn">
+					<img src="./images/m_up.png" alt="tab 아이콘" />
+				</button>
+			</div>
+			<div class="content">
+				<p>
+					1. AirdropINFO 가입<br> 2. 카카오톡 오픈채팅방 참여<br> 3. 텔레그램방 참여<br>
+					4. 페이스북 페이지 좋아요<br> 5. 트위터 팔로우<br> 6. 프로젝트 내용 공유
+				</p>
+			</div>
+		</div>
+		<div class="list list3">
+			<div class="tab clearfix">
+				<div class="title">
+					<h2>AirdropINFO 참여 방법</h2>
+				</div>
+				<button class="faq-btn">
+					<img src="./images/m_up.png" alt="tab 아이콘" />
+				</button>
+			</div>
+			<div class="content">
+				<p>
+					1. AirdropINFO 가입<br> 2. 카카오톡 오픈채팅방 참여<br> 3. 텔레그램방 참여<br>
+					4. 페이스북 페이지 좋아요<br> 5. 트위터 팔로우<br> 6. 프로젝트 내용 공유
+				</p>
+			</div>
+		</div>
+		<div class="list list4">
+			<div class="tab clearfix">
+				<div class="title">
+					<h2>AirdropINFO 참여 방법</h2>
+				</div>
+				<button class="faq-btn">
+					<img src="./images/m_up.png" alt="tab 아이콘" />
+				</button>
+			</div>
+			<div class="content">
+				<p>
+					1. AirdropINFO 가입<br> 2. 카카오톡 오픈채팅방 참여<br> 3. 텔레그램방 참여<br>
+					4. 페이스북 페이지 좋아요<br> 5. 트위터 팔로우<br> 6. 프로젝트 내용 공유
+				</p>
+			</div>
+		</div>
+	</section>
+	<script>
+// 메뉴스크립트 
+		var menu = $(".menu-btn")
+    	var list = $(".menu")
+   		var menuoverlay = $(".menu_overlay")
+   		
+        menu.on("click", function () {
+            if (menu.hasClass("active")) {
+            	menu.removeClass("active");
+            	list.removeClass("active")
+            	menuoverlay.removeClass("active");
+            } else {
+            	menu.addClass("active");
+            	list.addClass("active");
+            	menuoverlay.addClass("active");
+            }
+        });
+        
+        menuoverlay.on("click", function() {
+			if (menuoverlay.hasClass("active")) {
+				menuoverlay.removeClass("active");
+				list.removeClass("active");
+				menu.removeClass("active");
+			} else {
+				menuoverlay.addClass("active");
+				list.addClass("active");
+				menu.addClass("active");
+			}
+		})
+		
+		/* 나라 스크립트 */
+        function langChange(idx){
+        	for(var i=1; i<=4; i++)
+        		$("#lang_btn_"+i).removeClass("active");
+        	
+        	$("#lang_btn_"+idx).addClass("active");
+        }
+
+
+		$(function() {
+			var contain = $('.contents');
+			var content = contain.children('li');
+			// var contentidx = content.index();
+			var each = content.length;
+			var containW = each * 100;
+			var contentW = Math.abs(100 / each);
+			var contentper = contentW + '%';
+			var naveach = each - 1;
+			var navW = Math.floor(100 / naveach);
+			var navNow = Math.floor(navW);
+			var icon = '9' + 'px';
+			var i;
+			var count = 1;
+			/* var w100 = Math.abs(100); */ 
+
+			contain.css({
+				width : containW + '%'
+			});
+			content.css({
+				width : contentW + '%'
+			});
+
+			$('.btn .next').click(function() {
+				count++
+				$('.iconow').removeClass("mgl-9");
+
+				if (count <= each) {
+					$('.contents').stop().animate({
+						"margin-left" : "-=" + 100 + '%'
+					}, 300);
+					$('.iconow').stop().animate({
+						"margin-left" : "+=" + Math.floor(navNow) + '%'
+					}, 300);
+					$('.iconow').addClass("mgl9");
+
+				} else {
+					count = each;
+
+				}
+
+			});
+
+			$('.btn .prev').click(function() {
+				--count
+
+				$('.iconow').removeClass("mgl-9");
+
+				if (count <= 0) {
+					count = 1;
+					$('.iconow').addClass("mgl-9");
+
+				} else if (count <= each) {
+					$('.contents').stop().animate({
+						"margin-left" : "+=" + 100 + '%'
+					}, 300);
+					$('.iconow').stop().animate({
+						"margin-left" : "-=" + Math.floor(navNow) + '%'
+					}, 300);
+
+					if (count == 1) {
+						$('.iconow').addClass("mgl-9");
+					}
+				}
+
+			});
+			navlist();
+			contentlist();
+
+			function navlist() {
+				for (var i = 1; i <= each; i++) {
+					$(".apply_nav").append("<li></li>");
+				}
+				$(".apply_nav > li").append("<span></span>");
+				$(".apply_nav > li > span").addClass("p_round");
+				$('.apply_nav > li').css({
+					width : Math.floor(navW) + '%'
+				});
+				$('.apply_nav > li:last-child').css({
+					width : 0 + '%'
+				});
+				return false;
+			}
+
+			function contentlist() {
+				$(".contents > li").each(function(index) {
+					$(this).find(".tit_num").text("0" + index);
+				});
+			}
+
+		});
+
+		/* modal 스크립트 */
+		var modal = $(".modal_pageout");
+		var overlay = $(".modal_overlay");
+
+		overlay.on("click", function() {
+			if (overlay.hasClass("active")) {
+				overlay.removeClass("active");
+				modal.removeClass("active");
+			} else {
+				overlay.addClass("active");
+				modal.addClass("active");
+			}
+		});
+
+		function cancelModal() {
+			overlay.removeClass("active");
+			modal.removeClass("active");
+			button.removeClass("active");
+		}
+
+		/* faq 스크립트 */
+		var btnList = $(".question");
+		var contentList = $(".list");
+		var faqBtn = $(".faq-btn")
+		
+		btnList.on("click", function() {
+			if ($(this).hasClass("active")) {
+				btnList.removeClass("active");
+				contentList.removeClass("active");
+				contentList.removeClass("active");
+			} else {
+				btnList.removeClass("active");
+				contentList.removeClass("active");
+				contentList.removeClass("active");
+				$(this).addClass("active");
+
+				var content = $(this).attr("data-target");
+				$(content).addClass("active");
+			}
+		});
+		
+		faqBtn.on("click", function() {
+			faqBtn.hasClass("active");
+				contentList.removeClass("active");
+				btnList.removeClass("active");
+		});
+		
+	</script>
+</body>
+</html>

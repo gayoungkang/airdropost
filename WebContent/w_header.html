@@ -1,0 +1,86 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/swiper.min.css" />
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/w_header.css" />
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="#"> <img src="./images/logo.png" alt="로고" />
+			</a>
+		</div>
+		<nav>
+			<ul class="main-nav">
+				<li class="login"><a class="nav-contents" href="#">Log out</a></li>
+				<li><a class="nav-contents" href="#">Ongoing</a> <span
+					class="soon">Soon 2</span>
+				<li><a class="nav-contents" href="#">Upcoming</a> <span
+					class="new">New 1</span>
+				<li><a class="nav-contents" href="#">Closed</a> <span
+					class="new">New 12</span>
+				<li><a class="nav-contents" href="#">FAQ</a> <span class="new">New</span>
+				<li><a class="nav-contents" href="#">My page</a></li>
+				<li><a class="nav-contents" href="#">Cooperation Inquire</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+	<footer>
+		<div class="footer-content">
+			<div class="login_box">
+				<div class="lang">
+					<span class="label_pick"> 
+					<a href="javascript:void(0)" class="kor active"></a> 
+					<a href="javascript:void(0)" class="eng"></a>
+						<a href="javascript:void(0)" class="cn"></a> 
+						<a href="javascript:void(0)" class="jp"></a>
+					</span>
+				</div>
+			</div>
+			<div class="terms">
+				<div class="text">
+					<a href="#"><span>이용 약관 | 개인 정보 보호 정책</span></a> <a href="#"><span>©
+							2018 AIRDORPOSTS 모든 권리 보유.</span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- 제이쿼리 경로 -->
+	<script src="./js/jquery-3.3.1.min.js"></script>
+
+	<script>
+		// 로그인 스크립트 
+		var login = $(".login")
+		var list = $(".list")/* 로그인 페이지를 넣어주세요 */
+
+		login.on("click", function() {
+			if (login.hasClass("active")) {
+				login.removeClass("active");
+				list.removeClass("active"); /* 로그인 페이지를 넣어주세요 */
+			} else {
+				login.addClass("active");
+				list.addClass("active");/* 로그인 페이지를 넣어주세요 */
+			}
+		});
+		/* 나라 스크립트  */
+		var btnList = $(".label_pick a ");	
+
+		btnList.on("click", function() {
+		btnList.removeClass("active");	
+		$(this).addClass("active");
+
+		}); 
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+.login-pg {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	-webkit-backdrop-filter: blur(30px);
+  	backdrop-filter: blur(30px);
+  	background-color: #0f0f19;
+}
+.login-pg .content {
+	width: 85.83%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.login-pg .content h1 {
+	font-family: 'NotoSansCJKkr-Bold';
+	color: #aaaaaa;
+	text-align: center;
+	font-size: 37px;
+	margin-bottom: 10%;
+}
+.login-pg .content ul {
+	width: 73%;
+	margin: 0 auto;
+}
+.login-pg .content ul li {
+	width: 100%;
+	margin-bottom: 7%;
+}
+.login-pg .content ul li a {
+	display: inline-block;
+}
+.login-pg .content ul li img {
+	width: 100%;
+}

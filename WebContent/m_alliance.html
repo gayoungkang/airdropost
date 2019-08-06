@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/swiper.min.css" />
+<link rel="stylesheet" href="./css/m_alliance.css">
+<link rel="stylesheet" href="./css/m_top.css">
+</head>
+<body>
+<header>
+		<div class="contentdiv clearfix">
+			<div class="logo">
+				 <a class="home-a" href="./m_main.html">
+					<img class="home" src="./images/home_btn.png" alt="로고" />
+				</a> 
+			</div>
+			<div class="menu-btn">
+				<span></span> <span></span> <span></span> <span></span> <span></span>
+				<span></span> <span></span>
+			</div>
+		</div>
+
+		<nav class="menu">
+			<ul class="menu-list">
+				 <li class="log-in-kakao clearfix">
+						<a href="./w_login.html"><i class="log-in-kakao-icon"></i></a>
+							<div class="log-in-kakao-text">
+								<h2>공병구</h2>
+							</div>
+					</li> 
+				<li class="menu-item clearfix"><a class="content" href="./m_main.html"><span>Ongoing</span></a>
+					<a class="new" href="#"><span>NEW 2</span></a></li>
+				<li class="menu-item clearfix"><a class="content" href="./m_main.html"><span>Upcoming</span></a>
+					<a class="soon" href="#"><span>SOON 5</span></a></li>
+				<li class="menu-item clearfix"><a class="content" href="./m_step.html"><span>Step</span></a>
+				</li>
+				<li class="menu-item clearfix"><a class="content" href="./m_faq.html"><span>FAQ</span></a>
+				</li>
+				<li class="menu-item clearfix"><a class="content" href="./m_mypage.html"><span>My Page</span></a>
+				</li>
+				<li class="menu-item clearfix"><a class="content" href="./w_alliance.html"><span>Cooperation Inquire</span></a>
+				</li>
+			</ul>
+			<div class="lang">
+				<span class="label_pick">
+					<a href="javascript: langChange(1);" id="lang_btn_1" class="kor active"></a>
+					<a href="javascript: langChange(2);" id="lang_btn_2" class="eng"></a>
+					<a href="javascript: langChange(3);" id="lang_btn_3" class="cn"></a>
+					<a href="javascript: langChange(4);" id="lang_btn_4" class="jp"></a>
+				</span>
+			</div>
+		</nav>
+		<div class="menu_overlay"></div>
+	</header>
+
+	<section class="alliance">
+		<div class="brand-title">
+			<h2>제휴문의</h2>
+		</div>
+		<div class="content">
+			<div class="wrap">
+				<div class="row name clearfix">
+					<span>이름</span>
+					<input type="text" placeholder="입력해주세요"/>
+				</div>
+				<div class="row part clearfix">
+					<span>소속</span>
+					<input type="text" placeholder="입력해주세요"/>
+				</div>
+				<div class="row phon clearfix">
+					<span>연락처</span>
+					<input type="text" placeholder="입력해주세요"/>
+				</div>
+				<div class="row email clearfix">
+					<span>이메일</span>
+					<input type="email" placeholder="입력해주세요"/>
+				</div>
+				<div class="row url clearfix">
+					<span>URL</span>
+					<input type="url" placeholder="입력해주세요"/>
+				</div>
+				<div class="row title clearfix">
+					<span>직함</span>
+					<input type="text" placeholder="입력해주세요"/>
+				</div>
+				<div class="row contents clearfix">
+					<span>내용</span>
+					<textarea placeholder="입력해주세요"></textarea>
+				</div>
+			</div>
+			<button>제출하기</button>
+		</div>
+	</section>
+	<script>
+	// 메뉴스크립트 
+	// var menu = $(".menu-btn")
+    // 	var list = $(".menu")
+   	// 	var menuoverlay = $(".menu_overlay")
+   		
+    //     menu.on("click", function () {
+    //         if (menu.hasClass("active")) {
+    //         	menu.removeClass("active");
+    //         	list.removeClass("active")
+    //         	menuoverlay.removeClass("active");
+    //         } else {
+    //         	menu.addClass("active");
+    //         	list.addClass("active");
+    //         	menuoverlay.addClass("active");
+    //         }
+    //     });
+        
+    //     menuoverlay.on("click", function() {
+	// 		if (menuoverlay.hasClass("active")) {
+	// 			menuoverlay.removeClass("active");
+	// 			list.removeClass("active");
+	// 			menu.removeClass("active");
+	// 		} else {
+	// 			menuoverlay.addClass("active");
+	// 			list.addClass("active");
+	// 			menu.addClass("active");
+	// 		}
+	// 	})
+		
+	// 	/* 나라 스크립트 */
+    //     function langChange(idx){
+    //     	for(var i=1; i<=4; i++)
+    //     		$("#lang_btn_"+i).removeClass("active");
+        	
+    //     	$("#lang_btn_"+idx).addClass("active");
+    //     }
+	</script>
+</body>
+</html>

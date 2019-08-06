@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AirdropInfo</title>
+<link rel="stylesheet" type="text/css" href="css/admin/admin.css" >
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+
+function onSubmit(){
+	var id = document.getElementById('id').value;
+	var passwd = document.getElementById('passwd').value;
+	
+	if(id == ""){
+		alert("아이디를 입력하세요.");
+		return false;
+	}
+	
+	if(passwd == ""){
+		alert("비밀번호를 입력하세요.");
+		return false;
+	}
+}
+
+</script>
+
+</head>
+<body style="background-color: #1d1e2e;">
+	<div class="login-box">
+		<div style="padding-top: 20px;">
+			<form action="admin.ai" method="post" onsubmit="javascript: onSubmit()">
+				<input type="hidden" name="mode" value="admin_login" />
+				<table style="position: relative;">
+					<tr>
+						<td style="width: 80px; text-align: right;">ID</td>
+						<td style="width: 220px;"><input type="text" class="input-style" id="id" name="id"  tabindex="1" /></td>
+						<td rowspan="2" style="width: 80px;"><button type="submit" class="btn-default" style="width: 100%; height: 70px;" tabindex="3">Login</button></td>
+					</tr>
+					<tr>
+						<td style="text-align: right;">Password</td>
+						<td style=""><input type="password" class="input-style" name="passwd" id="passwd" tabindex="2" /></td>
+					</tr>
+					<tr>
+						<td colspan="3"><a class="homapage-link" href="main.ai" target="_blank">homepage link</a></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

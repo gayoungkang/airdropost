@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/reset.css" />
+<link rel="stylesheet" href="./css/m_top.css" />
+</head>
+<body>
+	<header>
+		<div class="contentdiv clearfix">
+			<div class="logo">
+				 <!-- <a class="logo-a" href="/airdrop_info/main.jsp">
+					<img class="logo-img" src="./images/logo.png" alt="로고" />
+				</a>  -->
+				 <a class="home-a" href="/airdrop_info/main.jsp">
+					<img class="home" src="./images/home_btn.png" alt="로고" />
+				</a> 
+			</div>
+			<div class="menu-btn">
+				<span></span> <span></span> <span></span> <span></span> <span></span>
+				<span></span> <span></span>
+			</div>
+		</div>
+
+		<nav class="menu">
+			<ul class="menu-list">
+				<!-- 로그인 전 메뉴 리스트 -->
+				<!-- <li class="log-in clearfix"><a href="#"><i
+						class="login-icon"><img src="./images/m_login_icon.png"
+							alt="로그인전 아이콘" /></i></a> <a class="login-text" href="#">
+						<h2>Log in</h2>
+						<p>로그인을 해주세요.</p>
+				</a></li> -->
+				<!-- 로그인 후 메뉴 리스트 -->
+				 <li class="log-in-kakao clearfix">
+						<a href="#"><i class="log-in-kakao-icon"></i></a>
+							<div class="log-in-kakao-text">
+								<h2>공병구</h2>
+							</div>
+					</li> 
+				<li class="menu-item clearfix"><a class="content" href="#"><span>Ongoing</span></a>
+					<a class="new" href="#"><span>NEW 2</span></a></li>
+				<li class="menu-item clearfix"><a class="content" href="#"><span>Upcoming</span></a>
+					<a class="soon" href="#"><span>SOON 5</span></a></li>
+				<li class="menu-item clearfix"><a class="content" href="#"><span>Closed</span></a>
+				</li>
+				<li class="menu-item clearfix"><a class="content" href="#"><span>FAQ</span></a>
+				</li>
+				<li class="menu-item clearfix"><a class="content" href="#"><span>Cooperation Inquire</span></a>
+				</li>
+			</ul>
+			<div class="lang">
+				<span class="label_pick">
+					<a href="javascript: langChange(1);" id="lang_btn_1" class="kor active"></a>
+					<a href="javascript: langChange(2);" id="lang_btn_2" class="eng"></a>
+					<a href="javascript: langChange(3);" id="lang_btn_3" class="cn"></a>
+					<a href="javascript: langChange(4);" id="lang_btn_4" class="jp"></a>
+				</span>
+			</div>
+		</nav>
+		<div class="menu_overlay"></div>
+	</header>
+
+
+	<!-- 제이쿼리 경로 -->
+	<script src="./js/jquery-3.3.1.min.js"></script>
+
+	<script>
+        // 메뉴스크립트 
+        var menu = $(".menu-btn")
+    	var list = $(".menu")
+   		var menuoverlay = $(".menu_overlay")
+   		
+        menu.on("click", function () {
+            if (menu.hasClass("active")) {
+            	menu.removeClass("active");
+            	list.removeClass("active")
+            	menuoverlay.removeClass("active");
+            } else {
+            	menu.addClass("active");
+            	list.addClass("active");
+            	menuoverlay.addClass("active");
+            }
+        });
+        
+        menuoverlay.on("click", function() {
+			if (menuoverlay.hasClass("active")) {
+				menuoverlay.removeClass("active");
+				list.removeClass("active");
+				menu.removeClass("active");
+			} else {
+				menuoverlay.addClass("active");
+				list.addClass("active");
+				menu.addClass("active");
+			}
+		})
+		
+		/* 나라 스크립트 */
+        function langChange(idx){
+        	for(var i=1; i<=4; i++)
+        		$("#lang_btn_"+i).removeClass("active");
+        	
+        	$("#lang_btn_"+idx).addClass("active");
+        }
+    </script>
+</body>
+</html>

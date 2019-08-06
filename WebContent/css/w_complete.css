@@ -1,0 +1,31 @@
+.complete{
+	width: 100%;
+}
+.complete .content {
+	text-align: center;
+	padding: 239px 85px 0 328px;
+}
+.complete .content img {
+	width: 72px;
+}
+.complete .content p {
+	font-family: 'NotoSansCJKkr-Light';
+	font-size: 29px;
+    line-height: 1.4;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.complete .content p span {
+	color:  #fd4d0a;
+	font-family: 'NotoSansCJKkr-Medium';
+}
+.complete .content button {
+	width: 143px;
+    height: 50px;
+	border-radius: 41px;
+	border: 2px solid #fd4d0a;
+	font-size: 18px;
+	color: #fd4d0a;
+	font-family: 'NotoSansCJKkr-Regular';
+	background-color: transparent;
+}

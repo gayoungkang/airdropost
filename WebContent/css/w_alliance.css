@@ -1,0 +1,54 @@
+.alliance{
+	width: 100%;
+	max-width: 1000px;
+	padding: 7% 47px 0 304px;
+	margin: 0 auto;
+}
+.alliance .content{
+	width: 100%;
+	position: relative;
+}
+.alliance .content .page-title {
+	width: 100%;
+	text-align: center;
+}
+.alliance .content .page-title h2 {
+	font-family: 'NotoSansCJKkr-Bold';
+	font-size: 28px;
+	margin-bottom: 54px;	
+}
+.alliance .content .wrap {
+	width: 100%;
+}
+.alliance .content .wrap .row {
+	margin-bottom: 18px;
+}
+.alliance .content .wrap .row span {
+	color: #fd4d0a;
+	font-size: 12px;
+	float: left;
+	line-height: 30px;
+	font-family: 'NotoSansCJKkr-Regular';
+}
+.alliance .content .wrap .row input,
+.alliance .content .wrap .row textarea {
+	width: 90%;
+	float: right;
+	height: 30px;
+	border-radius: 4px;
+	border: 0;
+	padding-left: 8px;
+	font-size: 12px;
+	color: #aaaaaa;
+	font-family: 'NotoSansCJKkr-Regular';
+	background-color: #292a38;
+}
+.alliance .content .wrap .row textarea {
+	height: 200px;
+}
+.alliance .content .wrap .row input::placeholder,
+.alliance .content .wrap .row textarea::placeholder {
+	font-size: 12px;
+	color: #aaaaaa;
+	font-family: 'NotoSansCJKkr-Regular';
+}
